@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../app/logo.png";
+import logo from "../app/logo.jpg";
 import React, { useState } from "react";
 
 function Navbar() {
@@ -11,27 +11,34 @@ function Navbar() {
       <div className="container mx-auto ">
         <div className="flex justify-between items-center">
           <div className="text-xl ">
-            <Image src={logo} alt="Logo" width={300} height={300} />
+            <Image
+              src={logo}
+              alt="Logo"
+              width={90}
+              height={90}
+              className="rounded-full "
+            />
           </div>
 
           <div className="hidden md:flex space-x-4">
             <div className="h-16 w-1 bg-white"></div>
-            <a href="#" className="hover:underline ">
+            <a href="#" className="hover:underline mt-9 ">
               About Us
             </a>
-
+            <div className="h-16 w-1 bg-white"></div>
             <div
               className="relative"
               onMouseEnter={() => setIsServicesHovered(true)}
               onMouseLeave={() => setIsServicesHovered(false)}
             >
-              <a href="#" className="hover:underline">
+              <a href="#" className="hover:underline mt-9">
                 {" "}
                 Our Services
               </a>
+
               {isServicesHovered && (
                 <div className="absolute left-0 top-full mt-2 w-48 bg-black  text-white shadow-lg rounded">
-                  <a href="#" className="block px-4 py-2 hover:bg-black0">
+                  <a href="#" className="block px-4 py-2 hover:bg-black">
                     Adult Courses
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-black">
@@ -55,16 +62,20 @@ function Navbar() {
             {/* <a href="/Services" className="hover:underline">
               Services
             </a> */}
-            <a href="/OurCourses" className="hover:underline">
+            <div className="h-16 w-1 bg-white"></div>
+            <a href="/OurCourses" className="hover:underline mt-9">
               Our Courses
             </a>
-            <a href="#" className="hover:underline">
+            <div className="h-16 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9">
               Online Courses
             </a>
-            <a href="#" className="hover:underline">
+            <div className="h-16 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9">
               News and Events
             </a>
-            <a href="#" className="hover:underline">
+            <div className="h-16 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9">
               Contact Us
             </a>
           </div>
