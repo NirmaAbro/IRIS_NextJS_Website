@@ -1,22 +1,21 @@
-import Image from "next/image";
-import bg from "../app/bgimg.jpg";
+"use client";
+import React from "react";
 import Navbar from "@/components/Navbar";
-import styles from "./page.module.css";
+import Hero from "@/components/Hero";
+import Login from "@/components/Login";
 
-export default function Home() {
+function Home() {
   return (
-    <section className="flex justify-between items-center">
-      <div className="fixed top-0 z-10 w-full" >
+    <>
+      <div className="sticky top-0 z-50">
+        <Login />
         <Navbar />
       </div>
-      <div className="w-1/2">
-        <Image
-          src={bg} // Replace with your image path
-          alt="Hero Image"
-          layout="fill" // Fills the container
-          objectFit="cover" // Crops to fit container while maintaining aspect ratio
-        />
+      <div>
+        <Hero />
       </div>
-    </section>
+    </>
   );
 }
+
+export default Home;
