@@ -6,13 +6,13 @@ import { RxCaretDown } from "react-icons/rx";
 function Login() {
   const [isMouseHovered, setIsMouseHovered] = useState(false);
   return (
-    <div className="lg:flex hidden lg:w-full bg-gray-800 justify-end">
+    <div className="lg:flex hidden lg:w-full bg-gray-800 justify-end ">
       <div
-        className="bg-gray-500 w-1/4 z-50  lg:flex gap-60 pl-2 text-white relative  font-bold"
+        className="bg-gray-500 w-1/4 z-50 lg:flex gap-60 pl-2 text-white relative  font-bold"
         onMouseEnter={() => setIsMouseHovered(true)}
         onMouseLeave={() => setIsMouseHovered(false)}
       >
-        <div className="font-bold">Login</div>
+        <div className="font-bold">Login</div>  
         <div className="font-bold text-3xl m-auto">
           <RxCaretDown />
         </div>

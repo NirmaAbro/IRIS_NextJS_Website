@@ -18,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black opacity-80 text-white p-9 z-50">
+    <nav className="bg-black opacity-80 text-white p-9 z-50 sticky top-0">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-xl">
