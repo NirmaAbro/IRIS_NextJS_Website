@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full m-0">
       <Image
         src={bg}
         alt="Background Image"
@@ -14,48 +14,58 @@ const Hero = () => {
         quality={100}
         className="z-0"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-        <h1 className="text-4xl font-bold mb-4">
+      <div className="absolute inset-x-0 top-0 flex flex-col items-center justify-center text-center text-white p-4">
+        <h1 className="text-2xl font-bold mt-10 lg:text-5xl">
           Empowering Minds, Transforming Futures
         </h1>
-        <h3 className="text-2xl mb-8">
+        <h5 className="lg:text-2xl lg:m-2">
           Driving Excellence in IT, Research, and Education for a <br />
           sustainable tomorrow
-        </h3>
+        </h5>
         {/* //search bar  */}
-        <div className="flex bg-white p-1 rounded-full w-1/2 ">
+        <div className="flex bg-white w-58 lg:w-2/3 m-5 rounded-full p-1 lg:px-4 lg:p-1">
           <input
             type="text"
             placeholder="Search Text"
-            className="w-full h-11 rounded-xl p-2"
+            className="rounded-full px-9 lg:w-full lg:px-2"
           />
           <FaSearch
-            className="cursor-pointer text-5xl p-2 rounded-full"
+            className="cursor-pointer justify-center p-1 text-2xl lg:text-4xl  font-sans items-center rounded-full"
             style={{ backgroundColor: "#4285F4" }}
           />
         </div>
-        <div className="flex gap-16 p-2 mt-8">
-          <h3 className="">
-            <span className="text-2xl font-bold">20</span> Research Consultants
-          </h3>
-          <h3 className="">
-            <span className="text-2xl font-bold">70</span> Training Consultants
-          </h3>
-          <h3 className="">
-            <span className="text-2xl font-bold">800</span> Research Consultants
-          </h3>
-          <h3 className="">
-            <span className="text-2xl font-bold">100</span> Services
-          </h3>
-          <h3 className=" ">
-            <span className="text-2xl font-bold">45,00</span> Learners
-          </h3>
+        {/* flex 4 item section  */}
+        <div className="m-1 md:flex md:gap-2 lg:gap-3  ">
+          <div className="flex gap-5 md:flex md:gap-2 lg:gap-3">
+            <p className="lg:p-1 lg:text-2xl ">
+              <span className="">20</span> Research Consultants
+            </p>
+            <p className="lg:p-1 lg:text-2xl ">
+              <span className="">70</span> Training Consultants
+            </p>
+          </div>
+
+          <div className="flex gap-2 md:flex md:gap-2 lg:gap-3">
+            <p className="lg:p-1 lg:text-2xl ">
+              <span className="">800</span> Research Consultants
+            </p>
+            <p className="lg:p-1 lg:text-2xl ">
+              <span className="">100</span> Services
+            </p>
+            <p className="lg:p-1 lg:text-2xl ">
+              <span className="">45,00</span> Learners
+            </p>
+          </div>
         </div>
         {/* button  */}
-        <div >
+        <div className="m-2 justify-center items-center" >
           <Button />
         </div>
+
+
       </div>
+
+
     </div>
   );
 };
