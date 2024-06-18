@@ -37,7 +37,7 @@ const Hero = () => {
         {/* flex 4 item section  */}
         <div className="m-1 md:flex md:gap-2 lg:gap-3  ">
           <div className="flex gap-5 md:flex md:gap-2 lg:gap-3">
-            <p className="lg:p-1 lg:text-2xl ">
+            <p className="lg:p-1 lg:text-2xl m-2">
               <span className="">20</span> Research Consultants
             </p>
             <p className="lg:p-1 lg:text-2xl ">
