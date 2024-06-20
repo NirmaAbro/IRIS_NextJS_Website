@@ -2,7 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import icon1 from '../app/icon1.png';
 import icon2 from "../app/icon2.png"
-// import icon3 from "../app/icon3.png"
+import icon3 from "../app/icon3.png"
+import arrow from "../app/arroww.png"
 
 
 function Section3() {
@@ -22,7 +23,7 @@ function Section3() {
                         <Image
                             src={icon1}
                             alt="Icon 1"
-                            className='text-white'
+                            className='text-white '
                             width={40}
                             height={30}
                             objectFit="contain"
@@ -36,7 +37,7 @@ function Section3() {
                 <div className="flex flex-col justify-center items-center mb-4 text-center z-10">
                     <div className="h-16 w-16 flex  justify-center m-4 items-center bg-[#4285F4] rounded-full">
                         <Image
-                            src={icon1}
+                            src={icon2}
                             alt="Icon 1"
                             className='text-white'
                             width={40}
@@ -51,7 +52,7 @@ function Section3() {
                 <div className="flex flex-col justify-center items-center mb-4 text-center z-10">
                     <div className="h-16 w-16 flex  justify-center m-4 items-center bg-[#4285F4] rounded-full">
                         <Image
-                            src={icon1}
+                            src={icon3}
                             alt="Icon 1"
                             className='text-white'
                             width={40}
