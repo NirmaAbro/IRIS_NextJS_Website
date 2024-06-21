@@ -24,8 +24,9 @@ function ImageSlider() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    // infinite: true,
-                    dots: true
+                    dots: true,
+                    centerMode: true,
+                    centerPadding: '0',
                 }
             },
             {
@@ -33,7 +34,9 @@ function ImageSlider() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 0
+                    initialSlide: 0,
+                    centerMode: true,
+                    centerPadding: '0',
                 }
             },
             {
@@ -61,35 +64,33 @@ function ImageSlider() {
     ];
 
     return (
-        <div className='w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 '>
-            <div className='mt-20 bg-white p-4 rounded-xl '>
+        <div className='w-full flex justify-center'>
+            <div className='mt-20 bg-white p-4 rounded-xl w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3'>
                 <Slider {...settings}>
                     {
                         data.map((d, index) => (
-                            <div key={index} className='m-3 rounded-xl gap-2 '>
-                                <div className='flex justify-center items-center m-2 rounded-xl '>
+                            <div key={index} className='p-3'>
+                                <div className='flex justify-center items-center mb-2'>
                                     <Image src={d.img} alt={d.title} width={300} height={300} />
                                 </div>
-                                <div className='flex justify-center items-center gap-4 m-2 text-base whitespace-nowrap'>
+                                <div className='flex justify-center items-center gap-4 mb-2 text-base whitespace-nowrap'>
                                     <div className='flex items-center max-w-xs overflow-hidden text-ellipsis'>
                                         <IoMdContact className='text-2xl text-green-400' />
                                         <p className='text-base ml-1'>50 Students</p>
                                     </div>
-
                                     <div className='flex items-center max-w-xs overflow-hidden text-ellipsis'>
                                         <IoIosClock className='text-2xl text-green-400' />
                                         <p className='text-base ml-1'>8 Hours</p>
                                     </div>
-
                                     <div className='flex items-center max-w-xs overflow-hidden text-ellipsis'>
                                         <FaStar className='text-2xl text-green-400' />
                                         <p className='text-base ml-1'>4.8 reviews</p>
                                     </div>
                                 </div>
                                 <div className='justify-center'><hr className='text-gray-500' /></div>
-                                <div className='m-1 mt-3 justify-center items-center'>
-                                    <p className='font-bold text-xl justify-center items-center'>{d.title}</p>
-                                    <button className='bg-blue-600 p-2 px-4 text-base text-white rounded-full justify-center items-center'>View Detail</button>
+                                <div className='mt-3 flex flex-col items-center'>
+                                    <p className='font-bold text-xl'>{d.title}</p>
+                                    <button className='bg-blue-600 p-2 px-4 text-base text-white rounded-full mt-2'>View Detail</button>
                                 </div>
                             </div>
                         ))

@@ -13,7 +13,7 @@ function Section4() {
                     Our services, spanning research, IT, training, and education, are meticulously designed to surpass expectations.
                     At the heart of our commitment is a passion for innovation, bespoke solutions, and a relentless pursuit of your success.
                 </p>
-            </div>
+            </div >
             <ImageSlider />
             <div>
 
