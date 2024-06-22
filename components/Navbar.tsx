@@ -52,22 +52,13 @@ function Navbar() {
               {isAboutHovered && (
                 <div className="absolute left-0 top-full mt-2 w-48 bg-black text-white shadow-lg rounded">
                   <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Adult Courses
+                    Our People
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Apprenticeship
+                    Join or Team
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Commercial Training
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Sector Base
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Fully Funded Digital Skill Training
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Carbon Literacy Training
+                    Distance learning Academy
                   </a>
                 </div>
               )}

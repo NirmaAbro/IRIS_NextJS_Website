@@ -2,11 +2,11 @@ import React from "react";
 
 const Button = () => {
   return (
-    <div className="flex gap-5 justify-between">
-      <button className="bg-green-500 text-wrap lg:p-3 lg:w-52 lg:text-xl p-2 hover:bg-green-600 text-white font-bold  rounded-full">
+    <div className="flex gap-5 justify-between leading-3 tracking-wide ">
+      <button className="bg-[#34A853] text-wrap lg:p-3 lg:w-52 lg:text-xl py-2.5 px-3 hover:bg-green-800 text-white font-semibold font-sans gap-1 rounded-full">
         JOB PORTAL
       </button>
-      <button className="bg-green-500 hover:bg-green-600 p-2 lg:p-3 lg:w-52 lg:text-xl text-white font-bold rounded-full">
+      <button className="bg-[#34A853] hover:bg-green-800 py-2.5 px-3 lg:p-3 lg:w-52 lg:text-xl text-white gap-1 font-semibold rounded-full font-sans">
         LOGIN IN LMS
       </button>
     </div>
