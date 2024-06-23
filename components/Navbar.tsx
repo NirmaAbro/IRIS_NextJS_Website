@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import logo from "../app/logo.jpg";
 import React, { useState } from "react";
@@ -18,8 +16,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black opacity-80 text-white p-9 z-50 sticky top-0">
-      <div className="container mx-auto">
+    <nav className="bg-black opacity-80 text-white p-4 z-50 sticky top-0 w-full">
+      <div className="mx-auto"> {/* Center content, removed px-4 for full width */}
         <div className="flex justify-between items-center">
           <div className="text-xl">
             <Image
@@ -28,17 +26,18 @@ function Navbar() {
               className="h-10 w-11 lg:h-16 lg:w-20"
             />
           </div>
-          {/* line icons */}
+
+          {/* Line icons for mobile */}
           <div className="lg:hidden flex gap-4 text-2xl text-white">
-            <div className="lg:hidden cursor-pointer text-2xl">
+            <div className="cursor-pointer text-2xl">
               <FaSearch />
             </div>
-            <div className="lg:hidden" onClick={togglebutton}>
+            <div onClick={togglebutton}>
               {isopen ? <ImCross /> : <Lineicon />}
             </div>
           </div>
 
-          {/* menus */}
+          {/* Menu items */}
           <div className="hidden lg:flex space-x-4">
             <div className="h-16 w-1 bg-white"></div>
             <div
@@ -55,7 +54,7 @@ function Navbar() {
                     Our People
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-black">
-                    Join or Team
+                    Join our Team
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-black">
                     Distance learning Academy
