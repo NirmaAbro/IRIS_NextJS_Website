@@ -11,6 +11,9 @@ function Navbar() {
   const [isopen, setisopen] = useState(false);
   const [navHeight, setNavHeight] = useState('auto'); // state to handle navbar height
 
+  const handleclickpeople =()=>{
+    console.log("clickeddd");
+  }
   const togglebutton = () => {
     setisopen(!isopen);
     console.log("btn clicked ");
@@ -34,7 +37,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black opacity-80 text-white p-4 z-50 sticky top-0 w-full transition-all duration-300" style={{ height: navHeight }}>
+    <nav className="bg-black opacity-80 text-white p-9 z-50 sticky top-0 w-full transition-all duration-300" style={{ height: navHeight }}>
       <div className="mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-xl">
@@ -68,7 +71,7 @@ function Navbar() {
               </a>
               {isAboutHovered && (
                 <div className="absolute left-0 top-full mt-2 w-48 bg-black text-white shadow-lg rounded">
-                  <a href="#" className="block px-4 py-0 hover:bg-black">
+                  <a href="#" className="block px-4 py-0 hover:bg-black" >
                     Our People
                   </a>
                   <a href="#" className="block px-4 py-0 hover:bg-black">
