@@ -11,7 +11,7 @@ function Navbar() {
   const [isopen, setisopen] = useState(false);
   const [navHeight, setNavHeight] = useState('auto'); // state to handle navbar height
 
-  const handleclickpeople =()=>{
+  const handleclickpeople = () => {
     console.log("clickeddd");
   }
   const togglebutton = () => {
@@ -37,7 +37,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black opacity-80 text-white p-9 z-50 sticky top-0 w-full transition-all duration-300" style={{ height: navHeight }}>
+    <nav className="bg-black opacity-80 text-white p-9 pb-1 z-50 sticky top-0 w-full transition-all duration-300" style={{ height: navHeight }}>
       <div className="mx-auto">
         <div className="flex justify-between items-center">
           <div className="text-xl">
@@ -60,38 +60,38 @@ function Navbar() {
 
           {/* Menu items */}
           <div className="hidden lg:flex space-x-4">
-            <div className="h-16 w-1 bg-white"></div>
+            <div className="h-20 w-1 bg-white"></div>
             <div
-              className="relative mt-9"
+              className="relative mt-9 pb-1 pl-0 pr-8"
               onMouseEnter={handleAboutMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <a href="#" className="hover:underline mt-9">
-                About Us
+                About <br /> Us
               </a>
               {isAboutHovered && (
-                <div className="absolute left-0 top-full mt-2 w-48 bg-black text-white shadow-lg rounded">
+                <div className="absolute left-0  top-full mt-2 w-48 bg-black text-white shadow-lg rounded">
                   <a href="#" className="block px-4 py-0 hover:bg-black" >
                     Our People
                   </a>
                   <a href="#" className="block px-4 py-0 hover:bg-black">
                     Join our Team
                   </a>
-                  <a href="#" className="block px-4 py-0 hover:bg-black">
+                  {/* <a href="#" className="block px-4 py-0 hover:bg-black">
                     Distance learning Academy
-                  </a>
+                  </a> */}
                 </div>
               )}
             </div>
 
-            <div className="h-16 w-1 bg-white"></div>
+            <div className="h-20 w-1 bg-white"></div>
             <div
-              className="relative mt-9"
+              className="relative mt-9 pb-1 pl-0 pr-8"
               onMouseEnter={handleServicesMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
               <a href="#" className="hover:underline mt-9">
-                Our Services
+                Our <br /> Gallery
               </a>
 
               {isServicesHovered && (
@@ -111,27 +111,31 @@ function Navbar() {
                   <a href="#" className="block px-4 py-0 hover:bg-black">
                     Fully Funded Digital Skill Training
                   </a>
-                  <a href="#" className="block px-4 py-0 hover:bg-black">
+                  {/* <a href="#" className="block px-4 py-0 hover:bg-black">
                     Carbon Literacy Training
-                  </a>
+                  </a> */}
                 </div>
               )}
             </div>
 
-            <div className="h-16 w-1 bg-white"></div>
-            <a href="/OurCourses" className="hover:underline mt-9">
-              Our Courses
+            <div className="h-20 w-1 bg-white"></div>
+            <a href="/OurCourses" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+              IT <br /> Services
             </a>
-            <div className="h-16 w-1 bg-white"></div>
-            <a href="#" className="hover:underline mt-9">
-              Online Courses
+            <div className="h-20 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+              Education <br /> Services
             </a>
-            <div className="h-16 w-1 bg-white"></div>
-            <a href="#" className="hover:underline mt-9">
-              News and Events
+            <div className="h-20 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+              Research <br /> & Services
             </a>
-            <div className="h-16 w-1 bg-white"></div>
-            <a href="#" className="hover:underline mt-9">
+            <div className="h-20 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+              Technical <br /> Training
+            </a>
+            <div className="h-20 w-1 bg-white"></div>
+            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
               Contact Us
             </a>
           </div>
