@@ -26,9 +26,9 @@ const Hero = () => {
         className="z-0"
       />
       <div className="absolute inset-x-0 top-0 mx-2.5 flex flex-col items-center justify-center text-center text-white gap-4">
-        <h1 className="font-sans font-bold text-xl leading-7 mt-9 text-center 
+        <h1 className="font-sans font-extrabold text-xl leading-7 mt-9 text-center 
                sm:text-3xl sm:leading-10 sm:whitespace-nowrap 
-               md:font-extrabold md:-tracking-tight md:text-3xl md:leading-10 md:mt-24 lg:text-4xl">
+               md:font-extrabold md:-tracking-tight md:text-3xl md:leading-10 md:mt-24 lg:font-extrabold lg:text-4xl">
           Empowering Minds, Transforming Futures
         </h1>
         <h5 className="sm:text-base sm:leading-6 sm:tracking-wider sm:m-2 text-xs md:text-2xl  md:mt-7 md:tracking-wide font-semibold">
