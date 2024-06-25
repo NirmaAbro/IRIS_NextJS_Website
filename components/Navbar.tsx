@@ -131,11 +131,11 @@ function Navbar() {
               Research <br /> & Services
             </a>
             <div className="h-20 w-1 bg-white"></div>
-            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+            <a href="#" className="hover:underline mt-9 ">
               Technical <br /> Training
             </a>
             <div className="h-20 w-1 bg-white"></div>
-            <a href="#" className="hover:underline mt-9 pb-1 pl-0 pr-8">
+            <a href="#" className="hover:underline mt-16">
               Contact Us
             </a>
           </div>
