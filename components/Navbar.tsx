@@ -17,7 +17,9 @@ function Navbar() {
 
   return (
     <nav className="bg-black opacity-80 text-white p-4 z-50 sticky top-0 w-full">
-      <div className="mx-auto"> {/* Center content, removed px-4 for full width */}
+      <div className="mx-auto">
+        {" "}
+        {/* Center content, removed px-4 for full width */}
         <div className="flex justify-between items-center">
           <div className="text-xl">
             <Image
