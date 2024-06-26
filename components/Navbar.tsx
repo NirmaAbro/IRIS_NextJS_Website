@@ -37,15 +37,8 @@ function Navbar() {
   };
 
   return (
-<<<<<<< HEAD
     <nav className="bg-[#E4EDFD] opacity-80 text-white p-9 pb-1 z-50 sticky top-0 w-full transition-all duration-300" style={{ height: navHeight }}>
       <div className="mx-auto">
-=======
-    <nav className="bg-black opacity-80 text-white p-4 z-50 sticky top-0 w-full">
-      <div className="mx-auto">
-        {" "}
-        {/* Center content, removed px-4 for full width */}
->>>>>>> origin/aboutus
         <div className="flex justify-between items-center">
           <div className="">
             <Image
