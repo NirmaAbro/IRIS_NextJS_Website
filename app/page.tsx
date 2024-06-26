@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero";
 // import Login from "@/components/Login";
 import Section2 from "@/components/Section2";
