@@ -11,6 +11,8 @@ import Video from "./Video";
 import Faq from "./Faq";
 import Help from "./Help";
 import Mission from "./Mission";
+import Approach from "./Approach";
+import Footer from "./Footer";
 
 const About = () => {
   return (
@@ -25,6 +27,8 @@ const About = () => {
         <Faq></Faq>
         <Help></Help>
         <Mission></Mission>
+        <Approach></Approach>
+        <Footer></Footer>
 
         {/* <Choose></Choose> */}
       </div>

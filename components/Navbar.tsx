@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Lineicon from "./Lineicon";
 import { FaSearch } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import Link from "next/link";
 
 function Navbar() {
   const [isServicesHovered, setIsServicesHovered] = useState(false);
@@ -47,9 +48,9 @@ function Navbar() {
               onMouseEnter={() => setIsAboutHovered(true)}
               onMouseLeave={() => setIsAboutHovered(false)}
             >
-              <a href="#" className="hover:underline mt-9">
+              <Link href="/about" passHref className="hover:underline mt-9">
                 About Us
-              </a>
+              </Link>
               {isAboutHovered && (
                 <div className="absolute left-0 top-full mt-2 w-48 bg-black text-white shadow-lg rounded">
                   <a href="#" className="block px-4 py-2 hover:bg-black">
