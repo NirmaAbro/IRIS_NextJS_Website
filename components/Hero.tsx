@@ -23,7 +23,7 @@ const Hero = () => {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="z-0"
+        className=" absolute flex-col justify-between w-screen z-0"
       />
       <div className="absolute inset-x-0 top-0 mx-2.5 flex flex-col items-center justify-center text-center text-white gap-4">
         <h1 className="font-sans font-extrabold text-xl leading-7 mt-9 text-center 
@@ -36,15 +36,15 @@ const Hero = () => {
           sustainable tomorrow
         </h5>
         {/* //search bar  */}
-        <div className="lg:flex bg-white w-full lg:w-2/3 hidden m-5 rounded-full lg:px-4 lg:p-1">
+        <div className="lg:flex bg-white w-full lg:w-1/2 hidden m-5 rounded-full lg:px-4 lg:p-1">
           <input
             type="text"
             placeholder="Search Text"
             value={search}
             onChange={handlesearchchange}
             className="rounded-full outline-none px-4 lg:w-full lg:px-3 text-black focus:outline-none"
-            style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}
-          />
+          //  style="width: 836px; height: 83px;"
+          /> 
           <FaSearch
             className="cursor-pointer text-center p-1 text-4xl lg:text-3xl font-sans items-center rounded-full ml-2 justify-center text-white bg-blue-500 hover:bg-blue-600 transition-colors duration-300"
             onClick={handleclick}
@@ -79,7 +79,7 @@ const Hero = () => {
 
 
 
-       <Button></Button>
+        <Button></Button>
       </div>
 
 
