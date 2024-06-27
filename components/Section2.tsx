@@ -15,7 +15,7 @@ function Section2() {
                     <h1 className='text-4xl font-sans text-left font-bold mb-4 '>
                         WHO WE <span className='text-blue-500 justify-start items-start'>ARE</span>
                     </h1>
-                    <h6 className='text-xl font-semibold mb-2'>Fostering Growth Through</h6>
+                    <h6 className=''>Fostering Growth Through</h6>
                     <h6 className='text-xl font-semibold mb-2'>Comprehensive Education and Training</h6>
                     <h6 className='text-xl font-semibold mb-4'>Services</h6>
                 </div>
