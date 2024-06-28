@@ -12,7 +12,7 @@ function Home() {
     <>
       <div className="sticky top-0 z-50">
         {/* <Login /> */}
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <div>
         <Hero />
