@@ -67,15 +67,9 @@ function Navbar() {
               onMouseEnter={handleAboutMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-<<<<<<< HEAD
               <a href="#" className=" mt-9 text-[#8C8C8C]">
                 About <br /> Us
               </a>
-=======
-              <Link href="/about" passHref className="hover:underline mt-9">
-                About Us
-              </Link>
->>>>>>> origin/aboutus
               {isAboutHovered && (
                 <div className="absolute left-0  top-full mt-2 w-48 rounded">
                   <a href="#" className="block px-4 py-0 text-[#8C8C8C]" >
