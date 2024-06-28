@@ -13,7 +13,7 @@
  
 }
 
-.mobile-heading3span-twenty{
+.mobile-headingthreespan-twenty{
   @apply font-sans font-semibold text-lg leading-5 tracking-normal text-white;
   
 }
@@ -35,12 +35,12 @@
     @apply font-sans font-semibold text-base leading-6 tracking-normal ;
 }
 
-.tablet-heading3span-twenty{
+.tablet-headingthreespan-twenty{
     @apply font-sans font-semibold text-base leading-6 tracking-normal;
 }
 
-.tablet-heading3-hero{
-    @apply font-sans leading-4 font-semibold tracking-normal max-w-full;
+.tablet-headingthree-hero{
+    @apply font-sans leading-4 font-medium tracking-normal max-w-full;
 }
  /* .tablet-button-css{
     @apply  w-[82px] h-5 py-2.5 px-3 gap-[5.03px] ;
@@ -57,7 +57,7 @@
 /* tracking-0.25% */
 }
 
-.desktop-heading3-twenty{
+.desktop-headingthree-twenty{
     @apply font-sans text-3xl leading-9 font-bold tracking-wide ;
 }
 .desktop-hsix-headingthree{
