@@ -6,8 +6,9 @@ import Image from "next/image";
 const Mission = () => {
   return (
     <>
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
+      <div className="container mx-auto px-4 py-8 mt-20">
+        {/* Mission Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40">
           <div className="flex flex-col">
             <h2 className="text-4xl font-bold mb-4">
               Our <span className="text-blue-500">Mission</span>
@@ -23,18 +24,32 @@ const Mission = () => {
               strive to be a trusted partner in fostering sustainable
               development and socio-economic growth in Sindh and Pakistan.
             </p>
-            <div className="border-4 border-blue-500 rounded-lg overflow-hidden">
-              <Image src={mission} alt="Mission" layout="responsive" />
-            </div>
+          </div>
+          <div className="flex justify-center">
+            <Image
+              src={mission}
+              alt="Mission Image"
+              className="border-4 border-blue-500"
+              layout="intrinsic"
+            />
+          </div>
+        </div>
+
+        {/* Vision Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-40 mt-8">
+          <div className="order-last lg:order-first flex justify-center lg:block">
+            <Image
+              src={vision}
+              alt="Vision Image"
+              className="border-4 border-blue-500"
+              layout="intrinsic"
+            />
           </div>
           <div className="flex flex-col">
-            <div className="border-4 border-blue-500 rounded-lg overflow-hidden mb-4">
-              <Image src={vision} alt="Vision" />
-            </div>
             <h2 className="text-4xl font-bold mb-4">
               Our <span className="text-blue-500">Vision</span>
             </h2>
-            <p className="max-w-96">
+            <p className="mb-4 max-w-[100]">
               To be the leading provider of comprehensive and impactful
               educational, training and Research services in Sindh and Pakistan,
               empowering individuals, and organizations to achieve their full
